@@ -1,0 +1,169 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav strong {
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 4rem 0;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: grey;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 3rem 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 0.2rem solid black;
+}
+
+main aside {
+  padding: 1rem;
+  width: 100%;
+}
+
+main section article a {
+  text-decoration: none;
+}
+
+main section {
+  border-left: 0.2rem solid black;
+  width: 100%;
+}
+
+main section .work {
+  padding: 0.5rem;
+}
+
+main section .work:first-child {
+  border-bottom: 0.2rem solid black;
+}
+
+main section article {
+  padding: 0.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card section {
+  border: 0.2rem solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card section:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.card section p:nth-child(3) {
+  color: grey;
+}
+.card section p:nth-child(2) {
+  color: grey;
+}
+
+footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10rem 0;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  main section {
+    border-left: none;
+    border-top: 0.2rem solid black;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card section {
+    margin: 1rem 0;
+  }
+
+  .card section:nth-child(2) {
+    margin: 1rem 0;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 2rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
